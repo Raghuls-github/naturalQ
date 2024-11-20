@@ -37,13 +37,13 @@ class MyVanna ( ChromaDB_VectorStore , OpenAI_Chat ) :
 
 # Connecting to openAI gpt-4o
 vn = MyVanna ( config = {
-    'api_key' : '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' ,
+    'api_key' : 'your-openai-api-key' ,
     'model' : 'gpt-4o'} )
 
 """### 🔌 Connecting to the Snowflake Database using the vanna.ai native library connect_to_snowflake"""
 
-vn.connect_to_snowflake ( account = "ldtalot-nw84078" , username = "raghulZ" , password = "wortim-1Zanbe-basjoq" ,
-                          database = "crq_db" , role = "ACCOUNTADMIN" , )
+vn.connect_to_snowflake ( account = "your-account" , username = "username" , password = "password" ,
+                          database = "your-database" , role = "your-role" , )
 
 """### 💾 Training the model specific to the DB"""
 
